@@ -1,0 +1,33 @@
+const destino = prompt(
+  "Digite F se quer seguir para área de Front-End ou B se quer seguir para área de Back-End."
+);
+let linguagem = "";
+if (destino == "F") {
+  linguagem = prompt("Quer aprender React ou Vue?");
+} else if (destino == "B") {
+  linguagem = prompt("Quer aprender C# ou Java?");
+} else {
+  alert("Você não inseriu uma área válida");
+}
+console.log(linguagem);
+
+const especializarOuDesenvolver = prompt(
+  "Digite 1 se você quer serguir se especializando na área escolhida ou Digite 2 se você quer seguir desenvolvendo para se tornar FullStack?"
+);
+let opcao = "";
+if (especializarOuDesenvolver == 1) {
+  opcao = alert(`Parabéns, você vai se tornar um Senior em ${linguagem}!!!`);
+} else if (especializarOuDesenvolver == 2) {
+  opcao = alert(`Continue firma até se tornar um desenvolvedor FullStack!!!`);
+} else {
+  alert("Você não inseriu um número válido!!!");
+}
+
+let tec = prompt(
+  "Tem mais alguma tecnologia que você gostaria de aprender? Digite 1 em caso de positivo."
+);
+while (tec == 1) {
+  let novaTec = prompt("Qual???");
+  alert(`Você tem um longo caminho para aprender ${novaTec}`);
+  tec = prompt("Mais alguma? Digite 1 em caso positivo.");
+}
